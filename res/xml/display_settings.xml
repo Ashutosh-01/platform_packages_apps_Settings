@@ -25,7 +25,11 @@
                 settings:keywords="@string/keywords_display_brightness_level">
             <intent android:action="android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
         </PreferenceScreen>
-
+	<com.android.settings.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_title"
+        android:summary="@string/double_tap_to_sleep_summary"
+        android:defaultValue="true" />
         <SwitchPreference
                 android:key="auto_brightness"
                 android:title="@string/auto_brightness_title"
